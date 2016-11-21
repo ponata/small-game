@@ -1,0 +1,36 @@
+.container{
+    position:relative;
+    margin: 20px 0 20px 20px;
+    background-image: url('background.jpg');
+    background-repeat: no-repeat;
+    width:640px;
+    height:480px;
+    overflow: hidden;
+}
+
+.square{
+    width: 50px;
+    height: 50px;
+    position:absolute;
+    top:0;
+
+    animation: moveSquare 1 linear forwards
+}
+
+.square:hover{
+    box-shadow: 0px 0px 11px 2px rgba(0,0,0,0.67);
+}
+
+h1{
+    display: none;
+}
+
+@keyframes moveSquare {
+    from {top: 0px;}
+    to {top: 100%;}
+}
+
+.score, button{
+    margin: 10px;
+    margin-left: 20px;
+}
